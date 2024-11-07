@@ -1,0 +1,1235 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "5069c887-a169-40e4-af61-b163399249a8",
+   "metadata": {},
+   "source": [
+    "## For loops \n",
+    "For loops is used to iterate through a sequence of values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "id": "0e04f153-1468-41a5-a3e1-c2539b73a4bd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "range(0, 5)"
+      ]
+     },
+     "execution_count": 85,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "range(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "22434ea2-6f9d-42b6-8167-a4d9c5e615f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "range(0, 10)"
+      ]
+     },
+     "execution_count": 87,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "range(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "49b94145-98e8-4cd7-a14b-4596cc9b9377",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(5):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "id": "8d0e41e9-2c85-4bed-8873-6d46e09aa190",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(20):\n",
+    "    if i > 7:\n",
+    "        break\n",
+    "    print(i)\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "46b4cfe5-5669-4788-8414-a59148bdc919",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(10):\n",
+    "    if i > 3:\n",
+    "        break\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "id": "3890fb4f-75c2-44f7-885d-daf33df829df",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(10):\n",
+    "    if i == 6:\n",
+    "        continue\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "id": "5226a304-31b3-456a-81e5-95705f16635e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "4\n",
+      "5\n",
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(7):\n",
+    "    if i == 3:\n",
+    "        continue\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6e5757ba-8c24-401e-a750-356dc64314af",
+   "metadata": {},
+   "source": [
+    "## Strings\n",
+    "- Strings are essential part of Python programming construct, they are denoted by either single or double quotes. \n",
+    "- Strings have methods for changing and manipulating them."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "5ac7a943-d87d-4031-a334-fc2847f07948",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name = 'eniola'\n",
+    "names = ['emmanuel', 'ruth', 'eniola', 'niyi', 'soji']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "bca333dc-f17a-48de-a5d1-d121f2132c56",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Eniola'"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.capitalize()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "297d178a-5355-46dc-9f0c-a917e001cc94",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "new_names = []\n",
+    "for i in names:\n",
+    "    new_names.append(i.capitalize())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "f002fd64-39d9-4af4-9591-dbacf7753ca2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Emmanuel', 'Ruth', 'Eniola', 'Niyi', 'Soji']"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "new_names"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "213feeec-8c6d-410e-9a06-ad4ce5aa7fab",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'ENIOLA'"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.upper()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "4843ba97-1b45-465e-88d3-e6471f2ab7c6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "new_names = []\n",
+    "for i in names:\n",
+    "    new_names.append(i.upper())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "d33de323-53ee-4386-9504-aa2b0bbb51e4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['EMMANUEL', 'RUTH', 'ENIOLA', 'NIYI', 'SOJI']"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "new_names"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "e3914ab9-d531-4797-8b35-e3ec6ae1f377",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'ENIOLA'"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "capital = name.upper()\n",
+    "capital"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "3cf31eaf-e28b-4a9d-baab-065bc3c75ff0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Eniola'"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# This method change the first letter of the word to uppercase\n",
+    "capital.title()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "31ed8655-eccb-4709-97c6-96e9293ae942",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'eniola'"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# This method changes all the letter of the word to lowercase\n",
+    "capital.lower()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "48227b78-8bd0-4340-887f-451286ae189c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "id": "195d994e-3377-4388-a8e3-96628b42a7ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'we are data science student'"
+      ]
+     },
+     "execution_count": 107,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'WE ARE DATA SCIENCE STUDENT'.lower()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "cb8dfc3d-6d68-4f65-b4d4-2b28a0c890ec",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'we are learning python'"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'wE ARE LEARNING python'.lower()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "id": "1844a1c1-84e4-4ce5-b9f1-cd3b04cccded",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'  Erinola  '"
+      ]
+     },
+     "execution_count": 111,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "pname = '  Erinola  '\n",
+    "pname"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 113,
+   "id": "a6003ff9-1506-4451-9b39-7d7f3e510518",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Erinola'"
+      ]
+     },
+     "execution_count": 113,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "pname.strip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 116,
+   "id": "1650cc49-f15f-470e-9a44-eb930eca4b79",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Erinola  '"
+      ]
+     },
+     "execution_count": 116,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "pname.lstrip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "id": "b028bd52-e25e-432f-8961-a0a72331f2b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Bisi', 'niyi', 'ola', 'tpepper'}"
+      ]
+     },
+     "execution_count": 122,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name = {'tpepper', 'ola', 'niyi', 'Bisi'}\n",
+    "name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "e0e2b270-e330-4223-8ff1-43220f747efd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name = '   olasoji  '"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "76682086-c696-49f9-8eba-eaf4fb931c41",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "12"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# This function is used to get the length of a string\n",
+    "len(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "67b8b251-498a-47b9-a67e-0aedf16c8f0d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'olasoji  '"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# This method strips the whitespaces on the left of a string\n",
+    "name.lstrip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "00048f77-3416-41db-8072-8cb149a19e28",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'   olasoji'"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# This method strips the whitespaces on the right of a string\n",
+    "name.rstrip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "86ad703d-eedd-4389-8e1d-fb9ad3f87fd0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'olasoji'"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# This method strips the whitespaces on both sides of a string\n",
+    "name.strip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "b6ecca76-4d94-47d4-a7fc-8ef2f46785b7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'AbcDef'.islower()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "736a9179-4cff-4bd4-bc33-ff744906327e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "b\n",
+      "c\n",
+      "e\n",
+      "f\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in 'AbcDef':\n",
+    "    if i.islower() == True:\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "9cf505ac-8a3d-4eea-b28f-258b99fcabbd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A\n",
+      "b\n",
+      "c\n",
+      "D\n",
+      "e\n",
+      "f\n"
+     ]
+    }
+   ],
+   "source": [
+    "lower_case = ''\n",
+    "for i in 'AbcDef':\n",
+    "    if i.islower() == True:\n",
+    "        print(i)\n",
+    "    elif i.isupper() == True:\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 140,
+   "id": "c8a36340-6bf5-4268-b4b7-c1fdaf979e5a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 140,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'GoMyCoDe' .islower()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 152,
+   "id": "ddf90a29-a7fc-480e-80f0-5e1b3b27272b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lower_case = []\n",
+    "upper_case = []\n",
+    "for i in 'GoMyCoDe':\n",
+    "    if i.islower() == True:\n",
+    "        lower_case.append(i)\n",
+    "    elif i.isupper() == True:\n",
+    "        upper_case.append(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 144,
+   "id": "75b51376-e724-4a13-8a5d-df457bb6e263",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lower_case = []\n",
+    "upper_case = []\n",
+    "for i in 'AbcDef':\n",
+    "    if i.islower() == True:\n",
+    "        lower_case.append(i)\n",
+    "    elif i.isupper() == True:\n",
+    "        upper_case.append(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 146,
+   "id": "30af1d6e-9638-4b58-93a9-8ae04fe1bb61",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['b', 'c', 'e', 'f']\n",
+      "['A', 'D']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(lower_case)\n",
+    "print(upper_case)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "fc77ffff-09c2-4b15-9d57-8838015a82c8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'A-b-c-D-e-f'"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Add joining two strings together\n",
+    "# Important Note!!! A String once declared can not be changed \n",
+    "'-'.join('AbcDef')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "390f3f8a-7014-4a77-b627-abf403846a2c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'+ + + +o+l+a+s+o+j+i+ + +'"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# This replace the first  argument with second argument in a string\n",
+    "name.replace('','+')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "d81b483e-d386-4bd9-aaf8-67939c96f682",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['WE', 'ARE', 'LEARNING', 'PYTHON', 'TOGETHER']"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "split = \"WE ARE LEARNING PYTHON TOGETHER\".split(' ')\n",
+    "split"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "49186f4e-a7a5-4b7a-8f56-a1bfe44e3521",
+   "metadata": {},
+   "source": [
+    "## PYTHON LIST\n",
+    "- The list is a python data structure that can be changed or mutuable, list can store any type of data.\n",
+    "- It's denoted by square bracket"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "76b0b77c-4a1c-416c-ae7e-9d2c176d2d8e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "shopping_list = ['Mango', 'Tomatoes', 'Pasta', 'Noodles', 'Rice']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "86f43850-fc73-4c77-b29f-097aa15e653c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Mango'"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "3b839f79-08be-49f3-b627-c22acda1240c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Rice'"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list[4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "177aac00-b154-4e59-b747-38e51bbfbb50",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Rice'"
+      ]
+     },
+     "execution_count": 64,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list[-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "5e0160a6-2ef7-4334-b2d2-d9094f72bb70",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Mango'"
+      ]
+     },
+     "execution_count": 66,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list[-5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "ac73a593-f3e3-4d51-9c25-845178e46ce4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Pasta', 'Noodles', 'Rice']"
+      ]
+     },
+     "execution_count": 67,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list[2:5]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "42881a1a-a3a8-49bf-b63c-655482011597",
+   "metadata": {},
+   "source": [
+    "### List Methods(Functions)\n",
+    "List have some methods which are usuful for manipulating and changing the values or elements in the list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 155,
+   "id": "e13ddf51-59b2-4255-8bb4-cc8f88e051eb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Mango', 'Tomatoes', 'Pasta', 'Noodles', 'Rice']"
+      ]
+     },
+     "execution_count": 155,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 159,
+   "id": "75286127-e2fa-460f-b56a-88f1a8a90919",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# this is an empty list\n",
+    "my_list = []"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e406c92e-96c5-4803-a6d5-25e73af59143",
+   "metadata": {},
+   "source": [
+    "### APPEND METHOD\n",
+    "This method add an element to the end of the list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 161,
+   "id": "5d87c639-75d9-405b-8552-2e6610c8f38a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "shopping_list.append(\"beans\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 165,
+   "id": "77b3775d-53fb-460c-a493-b2a4288de503",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#adding banana to the shopping list\n",
+    "shopping_list.append(\"banana\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 193,
+   "id": "331b6a40-4deb-4b62-8e71-ac76654f6928",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Mango',\n",
+       " 'Tomatoes',\n",
+       " 'Noodles',\n",
+       " 'Rice',\n",
+       " 'beans',\n",
+       " 'banana',\n",
+       " 'Benz.',\n",
+       " 'Ford',\n",
+       " 'Toyota',\n",
+       " 'RangeRover']"
+      ]
+     },
+     "execution_count": 193,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "20c93d1b-47f3-4ce4-b136-b08650e310f2",
+   "metadata": {},
+   "source": [
+    "### EXTEND METHOD:\n",
+    "The extend method is to extend the list with more items or element"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 174,
+   "id": "5ab6bbeb-9bab-4dab-9cbc-e886d8228b4d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "shopping_list.extend([\"Benz.\", \"Ford\", \"Kia\", \"Toyota\", \"RangeRover\"])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 176,
+   "id": "e4fa5390-9f94-4dbb-9853-ca3f01bb7a11",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Mango',\n",
+       " 'Tomatoes',\n",
+       " 'Pasta',\n",
+       " 'Noodles',\n",
+       " 'Rice',\n",
+       " 'beans',\n",
+       " 'banana',\n",
+       " 'Benz.',\n",
+       " 'Ford',\n",
+       " 'Kia',\n",
+       " 'Toyota',\n",
+       " 'RangeRover']"
+      ]
+     },
+     "execution_count": 176,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1e068050-d6ba-43ff-a4b2-e4084a1260c8",
+   "metadata": {},
+   "source": [
+    "### POP METHOD\n",
+    "we use POP method to remove the last element of the list by defult and can also remove other specified elements"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 181,
+   "id": "f0569b25-8403-4b3a-aa21-bb277f6a2d57",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Kia'"
+      ]
+     },
+     "execution_count": 181,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list.pop(9)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 183,
+   "id": "95fdfa5b-40b0-4a3d-af10-5c822bf9d567",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Mango',\n",
+       " 'Tomatoes',\n",
+       " 'Pasta',\n",
+       " 'Noodles',\n",
+       " 'Rice',\n",
+       " 'beans',\n",
+       " 'banana',\n",
+       " 'Benz.',\n",
+       " 'Ford',\n",
+       " 'Toyota',\n",
+       " 'RangeRover']"
+      ]
+     },
+     "execution_count": 183,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "430bc11f-2229-4c67-b36f-54a8eb14bdbf",
+   "metadata": {},
+   "source": [
+    "### REMOVE METHOD\n",
+    "This is to remove the elements passed into it without returning it."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 189,
+   "id": "801445c5-9a7a-4198-8f60-275ba521571f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "shopping_list.remove(\"Pasta\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 191,
+   "id": "25a95927-e1c0-41c2-a046-039d55176fea",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Mango',\n",
+       " 'Tomatoes',\n",
+       " 'Noodles',\n",
+       " 'Rice',\n",
+       " 'beans',\n",
+       " 'banana',\n",
+       " 'Benz.',\n",
+       " 'Ford',\n",
+       " 'Toyota',\n",
+       " 'RangeRover']"
+      ]
+     },
+     "execution_count": 191,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "shopping_list"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
